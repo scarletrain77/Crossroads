@@ -14,9 +14,9 @@ public class RoadTest extends JPanel {
 	public int CAR_STEP = 10;
 
 	RoadTest() {
-		setPreferredSize(new Dimension(20, 1000));
-		//setLayout(null);
-		//this.setBounds(0, 0, 1920, 1080);
+		//setPreferredSize(new Dimension(20, 1000));
+		setLayout(null);
+		this.setBounds(0, 0, 1920, 1080);
 		cars = new ArrayList<Car>();
 		
 		//单个车的运行
