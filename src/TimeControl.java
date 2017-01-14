@@ -11,10 +11,13 @@ public class TimeControl extends JPanel{
 	String time;
 	JLabel timeLabel;
 	JButton play;
+	int TIME_WIDTH = 200, TIME_HEIGHT = 100;
 
-	public TimeControl() {
-		setPreferredSize(new Dimension(640, 200));
-		setLayout(new FlowLayout());
+	public TimeControl(int timeX, int timeY) {
+		setLayout(null);
+		setBounds(timeX, timeY, TIME_WIDTH, TIME_HEIGHT);
+		setLocation(timeX, timeY);
+		
 		timeLabel = new JLabel("00:00:00");
 		Font f = new Font("ºÚÌå", 1, 15);
 		timeLabel.setFont(f);
